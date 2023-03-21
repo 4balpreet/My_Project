@@ -3,17 +3,6 @@ provider "aws" {
 }
 
 
-terraform {
-  backend "remote" {
-    hostname = "app.terraform.io"
-    organization = "Balpreet"
-
-    workspaces {
-      name = "my-app-test"
-    }
-  }
-}
-
 resource "aws_instance" "web" {
   ami = "ami-05502a22127df2492"
   instance_type = var.instance_type

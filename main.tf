@@ -4,7 +4,7 @@ provider "aws" {
 
 
 resource "aws_instance" "web" {
-  ami = "ami-05502a22127df2492"
+  ami = "ami-02f3f602d23f1659d"
   instance_type = var.instance_type
   count = length(var.instance_names)
 

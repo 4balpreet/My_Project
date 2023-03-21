@@ -1,0 +1,6 @@
+- name: "Install HTTPD"
+  hosts: Bots
+  become: true
+  gather_facts: true
+  roles:
+     - httpd

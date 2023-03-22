@@ -1,7 +1,7 @@
 variable "instance_names" {
   description = "Create Instances with these names"
   type        = list(string)
-  default     = ["Bot1", "Bot2"]
+  default     = ["Bot"]
 }
 
 variable "instance_type" {
